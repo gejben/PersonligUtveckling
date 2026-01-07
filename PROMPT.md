@@ -1,6 +1,6 @@
 # Personlig utveckling — AI-guide
 
-Så här kan du använda Claude för att jobba med detta system.
+Så här kan du använda din AI-assistent för att jobba med detta system.
 
 ---
 
@@ -9,7 +9,7 @@ Så här kan du använda Claude för att jobba med detta system.
 **Starta med:**
 > "Jag vill göra min veckoreview. Kan du ställa frågor och sen sammanfatta?"
 
-Claude kommer då guida dig genom:
+AI:n kommer då guida dig genom:
 - Vad som gick bra och dåligt
 - Hur träning/kost/återhämtning gick
 - Framsteg på fokusområden
@@ -25,7 +25,7 @@ Alternativt:
 **Starta med:**
 > "Jag vill uppdatera min utvecklingsplan. Nuläget är... [beskriv]"
 
-Claude hjälper dig:
+AI:n hjälper dig:
 - Identifiera vad som faktiskt är viktigast just nu
 - Utmana vaga mål
 - Föreslå konkreta beteenden
@@ -60,7 +60,7 @@ Claude hjälper dig:
 
 ## Mönster och ärlighet
 
-Claude kan hjälpa dig se mönster du missar själv:
+AI:n kan hjälpa dig se mönster du missar själv:
 
 > "Här är mina senaste 4 veckoreviews. Vilka mönster ser du?"
 
@@ -74,5 +74,5 @@ Claude kan hjälpa dig se mönster du missar själv:
 
 - **Var specifik.** "Det gick sådär" ger inte mycket att jobba med.
 - **Var ärlig.** Poängen är att förstå verkligheten, inte att se bra ut.
-- **Koppla till dokument.** Referera till dina filer så Claude har kontext.
-- **Utmana dig själv.** Be Claude vara ärlig och ifrågasätta dina antaganden.
+- **Koppla till dokument.** Referera till dina filer så AI:n har kontext.
+- **Utmana dig själv.** Be AI:n vara ärlig och ifrågasätta dina antaganden.

@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AI_GUIDE.md
 
-This file provides guidance to Claude when working with this repository.
+This file provides guidance to the AI Assistant when working with this repository.
 
 ## Repository Overview
 
@@ -22,7 +22,7 @@ Personal development and life management system for Gabriel Fiedler. Covers heal
 
 ```
 personlig/
-├── CLAUDE.md                     # This file
+├── AI_GUIDE.md                   # This file
 ├── Hälsa/
 │   ├── Träning.md                # Training goals, plan, principles
 │   ├── Kost.md                   # Nutrition goals and guidelines

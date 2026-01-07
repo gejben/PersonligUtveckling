@@ -1,6 +1,6 @@
 # Veckoreview — Struktur
 
-*Använd denna mall för din veckovisa reflektion. Kopiera strukturen till en ny fil (t.ex. `01.md`, `02.md`) eller fyll i direkt i konversation med Claude.*
+*Använd denna mall för din veckovisa reflektion. Kopiera strukturen till en ny fil (t.ex. `01.md`, `02.md`) eller fyll i direkt i konversation med din AI-assistent.*
 
 ---
 
