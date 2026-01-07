@@ -1,89 +1,74 @@
 # Personlig utvecklingsplan
 
-*Senast uppdaterad: [datum]*
+*Senast uppdaterad: 2025-01-07*
 
 ---
 
 ## Vem är jag?
 
-*Kort självbild — vad definierar dig, vad värdesätter du, vad driver dig?*
+Jag är en byggare, optimerare och ansvarsbärare. Jag drivs av progression och av att skapa system som fungerar — både på jobbet och hemma. Jag har hög kapacitet men tenderar att fastna i "optimeringsträsket" istället för att bara göra det som krävs. Jag värderar ärlighet, system över viljestyrka och att se andra lyckas.
 
 ---
 
 ## Var är jag nu?
 
-*Ärlig nulägesbeskrivning. Vad fungerar bra? Vad fungerar inte?*
+**Styrkor:**
+-   Stark systemförståelse och förmåga att se helheter.
+-   Hög relationell intelligens; skapar trygghet för team och familj.
+-   Tar ägarskap för min egen utveckling (detta repository är ett bevis).
+
+**Utmaningar:**
+-   **Prokrastinering:** Skjuter upp obekväma saker genom att "förbereda" eller bygga system istället för att agera.
+-   **Kognitiv last:** För många öppna loopar (jobb, konsult, app, träning, ekonomi) skapar stress.
+-   **Ekonomi:** 5-årsplan för skuldfrihet kräver nolltolerans för misstag, vilket är en stressfaktor.
 
 ---
 
 ## Vart vill jag?
-
-*Vision på 3-5 års sikt. Inte specifika mål utan riktning.*
+Jag vill vara en ledare som bygger både robusta system och robusta människor, utan att bränna ut mig själv på kuppen. Jag vill ha en vardag där jag agerar direkt på det väsentliga, där min ekonomi är sanerad, och där jag har utrymme för lek och kreativitet utan skuld.
 
 ---
 
-## Fokusområden (max 2-3)
+## Fokusområden
 
-### 1. [Område]
+### 1. Imperfekt Action ("Gör det nu")
 
 **Varför detta?**
-*Vad gör detta viktigt just nu?*
+Prokrastinering och perfektionism är min största bromskloss. Jag väntar på att känna mig "redo", vilket kostar tid och energi.
 
 **Vad innebär framsteg?**
-*Konkreta beteenden eller utfall som visar att det går framåt.*
+-   Att jag tar det obekväma samtalet direkt, inte sen.
+-   Att jag levererar "fula" versioner av projekt/dokument tidigt.
+-   Att jag slutar "planera" träning och kost och bara följer protokollet.
 
 **Vad kan hindra mig?**
-*Mönster, triggers, yttre faktorer.*
+Rädslan för att göra fel eller att det inte blir optimalt. "Optimering som flykt".
 
 **Vad ska jag göra?**
-*Specifika handlingar, vanor, eller experiment.*
+-   Implementera **"Clean & Lean"** kostprotokollet direkt utan att försöka hitta en "ännu bättre" metod.
+-   Öva på att skicka iväg saker när de är 80% klara.
 
 ---
 
-### 2. [Område]
+### 2. Essentialism ("Färre spår")
 
 **Varför detta?**
+Jag har för många parallella spår (Momentum, Fiedler Consulting, karriär, BJJ, Golf, Warhammer). Det splittrar min energi.
 
 **Vad innebär framsteg?**
+-   Att jag vågar välja bort bra saker för att fokusera på de *bästa*.
+-   Att jag stänger öppna loopar (avslutar eller dödar projekt).
 
 **Vad kan hindra mig?**
+Min "Learner/Ideation"-sida som vill allt.
 
 **Vad ska jag göra?**
-
----
-
-### 3. [Område] *(valfritt)*
-
-**Varför detta?**
-
-**Vad innebär framsteg?**
-
-**Vad kan hindra mig?**
-
-**Vad ska jag göra?**
-
----
-
-## Parkerade områden
-
-*Saker som är viktiga men inte i fokus just nu. Skriv ner dem så de inte gnager.*
+-   Hålla mig stenhårt till 1-2 huvudfokus utöver jobb/familj. (Just nu: Hälsa/Kost & Ekonomi).
 
 ---
 
 ## Reflektionsfrågor för veckoreview
 
-Använd dessa i din veckoreview för att koppla vardagen till utvecklingsplanen:
-
-1. Har jag agerat i linje med mina fokusområden denna vecka?
-2. Har jag fallit in i gamla mönster? Vad triggade det?
-3. Vad ska jag göra annorlunda nästa vecka?
-
----
-
-## Kvartalsvis översyn
-
-Varje kvartal, granska:
-
-- Är fokusområdena fortfarande rätt?
-- Vad har jag faktiskt gjort vs. planerat?
-- Behöver något justeras eller bytas ut?
+1.  Höll jag mig till protokollet (kost/ekonomi) eller försökte jag "förbättra" det?
+2.  Vad sköt jag upp denna vecka som jag borde gjort direkt?
+3.  Sa jag nej till något för att skydda mitt fokus?

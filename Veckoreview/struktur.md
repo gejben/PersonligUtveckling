@@ -19,10 +19,12 @@
 
 ## 2. Hälsa
 
-### Träning
-- Planerat:
-- Genomfört:
-- Kommentar:
+### Träning (Mål: 6 pass/v)
+- **BJJ (Mål: 2-3):** [ ] [ ] [ ]
+- **Squash (Mål: 1):** [ ]
+- **Övrigt (VR/Löp):** [ ] [ ]
+- **Vilodagar (Mål: 1):**
+- *Kommentar:*
 
 ### Kost
 - Hur följde jag mina riktlinjer?
@@ -32,6 +34,21 @@
 - Sömn (kvalitet/kvantitet):
 - Stressnivå (1-10):
 - Vad påverkade återhämtningen?
+
+---
+
+## 3. Relation & Sambo (Nyckelområde)
+
+### Check-in (Trauma-aware)
+- **Initiativ:** Har jag *lett* relationen denna vecka (föreslagit mat, planerat, fixat) eller bara "följt med"?
+- **Anti-Silence:** Har det funnits "farlig tystnad"? Dödade jag den, eller lät jag den växa?
+- **Kvalitet:** Har vi haft stunder där vi bara varit "Vi" (utan barn/jobb/telefoner)?
+- *Resurs:* Vid tveksamheter, skanna `Relationer/Kunskapsbank.md` för mönster och protokoll.
+
+### Plan framåt & Sambo
+- **Kommande vecka:** Vilka potentiella stress-triggers finns? (Barnvecka, mens, jobb?)
+- **Barnen:** (Om barnvecka) Är Jonathan förberedd? Har de gjort sina sysslor (självständighet)?
+- **Pre-emptive Strike:** Vad kan jag göra i förväg för att neutralisera dem? (Boka matkasse, planera dejt, städa undan).
 
 ---
 
@@ -47,8 +64,11 @@
 ### Årsmål
 *Någon aktivitet kopplad till dina årsmål?*
 
-### Lärande
-*Läste/lyssnade/tittade du på något värt att notera?*
+### Lärande & Studier
+*Vad läser/lyssnar/pluggar jag på nu?*
+- [ ] Blev det någon läsning denna vecka?
+- [ ] **Studier:** Är jag i fas med inlämningar? (AI/ML)
+
 
 ---
 
