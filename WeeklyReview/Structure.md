@@ -1,0 +1,113 @@
+# Veckoreview — Struktur
+
+*Använd denna mall för din veckovisa reflektion. Kopiera strukturen till en ny fil (t.ex. `01.md`, `02.md`) eller fyll i direkt i konversation med din AI-assistent.*
+
+---
+
+## 1. Veckans reflektion
+
+### Vad gick bra?
+*Framsteg, vinster, saker som fungerade.*
+
+### Vad var utmanande?
+*Motgångar, missade mål, friktion.*
+
+### Vad lärde jag mig?
+*Insikter om mig själv, mina vanor, eller min situation.*
+
+---
+
+## 2. Hälsa
+
+### Träning (Mål: 6 pass/v)
+- **BJJ (Mål: 2-3):** [ ] [ ] [ ]
+- **Squash (Mål: 1):** [ ]
+- **Övrigt (VR/Löp):** [ ] [ ]
+- **Vilodagar (Mål: 1):**
+- *Kommentar:*
+
+### Kost
+- Hur följde jag mina riktlinjer?
+- Vad fungerade/fungerade inte?
+
+### Återhämtning
+- Sömn (kvalitet/kvantitet):
+- Stressnivå (1-10):
+- Vad påverkade återhämtningen?
+
+---
+
+## 3. Relation & Sambo (Nyckelområde)
+
+### Check-in (Trauma-aware)
+- **Initiativ:** Har jag *lett* relationen denna vecka (föreslagit mat, planerat, fixat) eller bara "följt med"?
+- **Anti-Silence:** Har det funnits "farlig tystnad"? Dödade jag den, eller lät jag den växa?
+- **Kvalitet:** Har vi haft stunder där vi bara varit "Vi" (utan barn/jobb/telefoner)?
+- *Resurs:* Vid tveksamheter, skanna `Relationer/Kunskapsbank.md` för mönster och protokoll.
+
+### Plan framåt & Sambo
+- **Kommande vecka:** Vilka potentiella stress-triggers finns? (Barnvecka, mens, jobb?)
+- **Barnen:** (Om barnvecka) Är Jonathan förberedd? Har de gjort sina sysslor (självständighet)?
+- **Pre-emptive Strike:** Vad kan jag göra i förväg för att neutralisera dem? (Boka matkasse, planera dejt, städa undan).
+
+---
+
+## 3. Utveckling och mål
+
+### Fokusområden (från Utvecklingsplan)
+*Hur gick det med dina aktiva fokusområden?*
+
+**Område 1:**
+
+**Område 2:**
+
+### Årsmål
+*Någon aktivitet kopplad till dina årsmål?*
+
+### Lärande & Studier
+*Vad läser/lyssnar/pluggar jag på nu?*
+- [ ] Blev det någon läsning denna vecka?
+- [ ] **Studier:** Är jag i fas med inlämningar? (AI/ML)
+
+
+---
+
+## 4. Nästa vecka
+
+### Prioriteringar
+*Max 3 saker som är viktigast att få gjort.*
+
+1. 
+2. 
+3. 
+
+### Träning
+*Vad är planen?*
+
+### Övrigt att tänka på
+*Händelser, deadlines, saker att förbereda.*
+
+---
+
+## 5. Mönster och justeringar
+
+### Såg jag några mönster denna vecka?
+*Återkommande problem, triggers, vanor som hjälper eller stjälper.*
+
+### Vad ska jag göra annorlunda?
+*Konkreta justeringar baserat på veckans lärdomar.*
+
+---
+
+## Valfritt: Poäng/rating
+
+*Om du gillar att kvantifiera:*
+
+| Område | Betyg (1-10) |
+|--------|--------------|
+| Träning | |
+| Kost | |
+| Sömn | |
+| Fokusområde 1 | |
+| Fokusområde 2 | |
+| **Total känsla för veckan** | |

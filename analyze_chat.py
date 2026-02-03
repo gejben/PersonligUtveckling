@@ -1,97 +1,93 @@
 import re
-import collections
-from datetime import datetime
 import os
 
-FILE_PATH = r"c:\Users\gabri\personligutveckling\PersonligUtveckling\WhatsApp Chat with Debbie.txt"
-
-def parse_line(line):
-    # Pattern for "M/D/YY, HH:MM - Sender: Message"
-    # Adjusting for the format seen in logs: "7/10/24, 10:39 - Gabriel: Hej!"
-    match = re.match(r'^(\d+/\d+/\d+), (\d+:\d+) - ([^:]+): (.+)$', line)
-    if match:
-        return {
-            'date': match.group(1),
-            'time': match.group(2),
-            'sender': match.group(3),
-            'message': match.group(4)
-        }
-    return None
-
-def analyze_chat():
-    if not os.path.exists(FILE_PATH):
-        print(f"File not found: {FILE_PATH}")
+def parse_chat_log(file_path):
+    print(f"Reading file: {file_path}")
+    encodings = ['utf-8', 'utf-16', 'latin-1']
+    content = None
+    
+    for encoding in encodings:
+        try:
+            with open(file_path, 'r', encoding=encoding) as f:
+                content = f.read()
+            print(f"Successfully read with encoding: {encoding}")
+            break
+        except Exception as e:
+            print(f"Failed with encoding {encoding}: {e}")
+            
+    if content is None:
+        print("Could not read file with any encoding.")
         return
 
-    stats = {
-        'total_messages': 0,
-        'by_sender': collections.Counter(),
-        'by_month': collections.Counter(),
-        'keywords': {
-            'love': 0,
-            'conflict': 0,
-            'future': 0,
-            'fun': 0
-        },
-        'timeline': [] # List of (Date, Type)
+    lines = content.split('\n')
+    print(f"Total lines: {len(lines)}")
+    
+    # Regex for WhatsApp message format: "7/10/24, 10:39 - Gabriel: Message"
+    msg_pattern = re.compile(r'^(\d{1,2}/\d{1,2}/\d{2}), (\d{1,2}:\d{2}) - ([^:]+): (.*)')
+    
+    # Expanded Keyword Categories
+    keyword_map = {
+        "Firsts": ["första gången", "first time", "första dejt", "first date", "första kyss", "first kiss"],
+        "Locations": ["restaurang", "restaurant", "hotell", "hotel", "bio", "cinema", "café", "fika", "hemma hos", "din lägenhet", "mitt ställe", "stan", "park", "skogen", "sjö", "promenad", "walk"],
+        "Travel": ["resa", "trip", "travel", "semester", "vacation", "åkte till", "went to", "bil", "tåg", "flyg"],
+        "Media": ["titta på", "såg", "film", "movie", "serie", "series", "lyssna", "låt", "song", "musik", "music", "spela", "game", "bok", "läsa", "läser"],
+        "Food_Drink": ["middag", "dinner", "lunch", "frukost", "breakfast", "äta", "åt", "dricka", "drack", "vin", "öl", "kaffe", "sushi", "pizza", "tacos"],
+        "Activities": ["tränade", "gym", "springa", "löpning", "bad", "bada", "simma", "grilla", "fiska"],
+        "Emotions": ["älskar dig", "love you", "kär", "love", "saknar dig", "miss you", "tycker om dig", "gillar dig"],
+        "Intimacy": ["sov", "sover", "säng", "natt", "vakna", "kyss", "puss", "hålla hand", "kram"],
+        "Gifts": ["present", "gav", "fick", "köpte", "julklapp", "födelsedag"]
     }
     
-    # Define keywords
-    love_words = ['älskar', 'kär', 'saknar', 'fin', 'snygg', 'mys', 'puss']
-    conflict_words = ['ledsen', 'tyst', 'jobbig', 'stress', 'panik', 'falla', 'bråka', 'irritera']
-    future_words = ['flytta', 'barn', 'sambo', 'framtid', 'resa', 'planera']
-    fun_words = ['haha', 'lol', 'kul', 'roligt', 'skratt']
-
-    current_date = None
+    results = []
     
-    try:
-        with open(FILE_PATH, 'r', encoding='utf-8') as f:
-            for line in f:
-                data = parse_line(line)
-                if data:
-                    stats['total_messages'] += 1
-                    stats['by_sender'][data['sender']] += 1
-                    
-                    # Date parsing
-                    try:
-                        dt = datetime.strptime(data['date'], '%m/%d/%y')
-                        month_key = dt.strftime('%Y-%m')
-                        stats['by_month'][month_key] += 1
-                    except ValueError:
-                        continue
+    for line in lines:
+        match = msg_pattern.match(line)
+        if match:
+            date, time, sender, message = match.groups()
+            lower_msg = message.lower()
+            
+            found_categories = []
+            found_keywords = []
 
-                    msg_lower = data['message'].lower()
-                    
-                    # Keyword check
-                    if any(w in msg_lower for w in love_words):
-                        stats['keywords']['love'] += 1
-                    if any(w in msg_lower for w in conflict_words):
-                        stats['keywords']['conflict'] += 1
-                    if any(w in msg_lower for w in future_words):
-                        stats['keywords']['future'] += 1
-                    if any(w in msg_lower for w in fun_words):
-                        stats['keywords']['fun'] += 1
-                        
-    except Exception as e:
-        print(f"Error processing file: {e}")
-        return
+            for category, kws in keyword_map.items():
+                for kw in kws:
+                    if kw in lower_msg:
+                        found_categories.append(category)
+                        found_keywords.append(kw)
+                        # We don't break here to find multiple keywords/categories
+            
+            if found_categories:
+                # Deduplicate
+                found_categories = list(set(found_categories))
+                found_keywords = list(set(found_keywords))
+                
+                results.append({
+                    'date': date,
+                    'time': time,
+                    'sender': sender,
+                    'message': message,
+                    'categories': found_categories,
+                    'keywords': found_keywords
+                })
 
-    print("### Chat Analysis Summary")
-    print(f"Total Messages: {stats['total_messages']}")
-    print("\n### Sender Balance")
-    for sender, count in stats['by_sender'].items():
-        print(f"- {sender}: {count} ({count/stats['total_messages']*100:.1f}%)")
+    out_file = r"c:\Users\ga-fie\personlig\expanded_analysis_results.md"
+    
+    with open(out_file, 'w', encoding='utf-8') as f:
+        f.write("# Expanded Chat Analysis Results\n\n")
+        f.write(f"Total Matches: {len(results)}\n\n")
         
-    print("\n### Emotional Zones")
-    print(f"- Affection/Love: {stats['keywords']['love']} mentions")
-    print(f"- Conflict/Stress: {stats['keywords']['conflict']} mentions")
-    print(f"- Future Planning: {stats['keywords']['future']} mentions")
-    print(f"- Fun/Laughter: {stats['keywords']['fun']} mentions")
+        current_date = ""
+        for res in results:
+            if res['date'] != current_date:
+                f.write(f"## {res['date']}\n")
+                current_date = res['date']
+            
+            # Format: **Time Sender**: Message `[Categories: Keywords]`
+            cats_str = ", ".join(res['categories'])
+            kws_str = ", ".join(res['keywords'])
+            f.write(f"- **{res['time']} {res['sender']}**: {res['message']} `[{cats_str}: {kws_str}]`\n")
 
-    print("\n### Timeline (Volume by Month)")
-    sorted_months = sorted(stats['by_month'].items())
-    for month, count in sorted_months:
-        print(f"- {month}: {count} msgs")
+    print(f"Analysis complete. Results written to {out_file}")
 
-if __name__ == "__main__":
-    analyze_chat()
+file_path = r"c:\Users\ga-fie\personlig\WhatsApp Chat with Debbie.txt"
+parse_chat_log(file_path)
